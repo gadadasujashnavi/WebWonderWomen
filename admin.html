@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="stustyle.css"> 
+    <style>
+        /* Your CSS styles for the form here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Login</h1>
+        <form id="login-form" onsubmit="return validateForm()">
+           
+            <label for="username">Username:</label>
+            <input type="email" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <p id="password-error" style="color: red;"></p>
+
+            <table>
+            <tr>
+            <td><button type="submit">Login</button> </td><br><br>
+            <td><button type="button" onclick="resetForm()">Reset</button></td>
+            </tr>
+            </table>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            const passwordInput = document.getElementById("password");
+            const passwordError = document.getElementById("password-error");
+
+            
+            const usernameInput = document.getElementById("email");
+            const usernameError = document.getElementById("email-error");
+
+            // Check if the password meets the minimum length requirement (e.g., 6 characters)
+            if (passwordInput.value.length < 6) {
+                passwordError.textContent = "Password should contain at least 6 characters";
+                passwordInput.focus(); // Focus on the password field
+                return false; // Prevent form submission
+            } else {
+                passwordError.textContent = ""; // Clear any previous error messages
+
+                // Redirect to the student information page on successful login
+                window.location.href = "admin1.html"; // Replace with the actual URL
+                return false; // Prevent form submission (you can remove this if you want to submit the form)
+            }
+        }
+
+        function resetForm() {
+            // Reset the form by clearing the input fields and error message
+            document.getElementById("username").value = "";
+            document.getElementById("password").value = "";
+            document.getElementById("password-error").textContent = "";
+            document.getElementById("email-error").textContent = "";
+        }
+    </script>
+</body>
+</html>

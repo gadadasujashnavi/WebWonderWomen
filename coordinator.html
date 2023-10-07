@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Department Coordinator Profile</title>
+    <!-- Add your CSS stylesheets here -->
+    <link rel="stylesheet" href="coord.css">
+</head>
+<body>
+    <header>
+        <h1>Department Coordinator Profile</h1>
+        <!-- Add a navigation menu or links here -->
+        <nav>
+            <ul>
+                <li><a href="#access-placement-data"> Placement Data</a></li>
+                <li><a href="#generate-reports">Generate Reports</a></li>
+                <li><a href="#receive-notifications">Receive Notifications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Access Placement Data Section -->
+    <section id="placement-data">
+        <h2>Access Placement Data</h2>
+        <!-- Add content related to accessing placement data here -->
+    </section>
+
+    <!-- Generate Reports Section -->
+    <section id="generate-reports">
+        <h2>Generate Reports</h2>
+        <form>
+            <label for="passout-year">Passout Year:</label>
+            <input type="text" id="passout-year" name="passout-year" placeholder="Enter Passout Year">
+            
+            <label for="package-criteria">Package Criteria:</label>
+            <input type="text" id="package-criteria" name="package-criteria" placeholder="Enter Package Criteria">
+            
+            <button type="submit">Generate Report</button>
+        </form>
+        <!-- Display generated reports here -->
+    </section>
+
+    <!-- Receive Notifications Section -->
+    <section id="receive-notifications">
+        <h2>Receive Notifications</h2>
+        <!-- Add content related to receiving notifications here -->
+    </section>
+
+    <!-- Add your JavaScript scripts here if needed -->
+    <script>document.addEventListener("DOMContentLoaded", function () {
+    // Get references to form elements
+    const generateReportForm = document.querySelector("#generate-reports form");
+    const passoutYearInput = document.querySelector("#passout-year");
+    const packageCriteriaInput = document.querySelector("#package-criteria");
+
+    // Add an event listener for the form submission
+    generateReportForm.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the form from actually submitting
+
+        // Get the values from form inputs
+        const passoutYear = passoutYearInput.value;
+        const packageCriteria = packageCriteriaInput.value;
+
+        // Validate form inputs (you can add more validation)
+        if (!passoutYear || !packageCriteria) {
+            alert("Please fill out all fields.");
+            return;
+        }
+
+        // Simulate generating a report (replace this with your actual report generation logic)
+        const reportText = `Generating report for Passout Year: ${passoutYear}, Package Criteria: ${packageCriteria}`;
+        alert(reportText);
+    });
+});
+</script>
+</body>
+</html>

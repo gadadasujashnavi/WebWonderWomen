@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Manage Placement Data</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Add CSS styles specific to this page if needed */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Styling for data management sections */
+        .management-section {
+            margin-bottom: 30px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .management-section h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .management-section label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .management-section input[type="text"],
+        .management-section input[type="number"],
+        .management-section select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .management-section button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 24px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .management-section button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Add more CSS styles for specific data management elements as needed */
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Admin - Manage Placement Data</h1>
+    </div>
+    <div class="container">
+        <!-- Student data management section -->
+        <div class="management-section">
+            <h3>Manage Student Details</h3>
+            <form>
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" name="studentName" required>
+
+                <label for="rollNumber">Roll Number:</label>
+                <input type="text" id="rollNumber" name="rollNumber" required>
+
+                <label for="collegeName">College Name:</label>
+                <input type="text" id="collegeName" name="collegeName" required>
+
+                <label for="educationalDetails">Educational Details:</label>
+                <textarea id="educationalDetails" name="educationalDetails" rows="4" required></textarea>
+
+                <!-- Add more fields for managing student details -->
+
+                <button type="submit">Add Student</button>
+            </form>
+        </div>
+
+        <!-- Company data management section -->
+        <div class="management-section">
+            <h3>Manage Company Details</h3>
+            <form>
+                <label for="companyName">Company Name:</label>
+                <input type="text" id="companyName" name="companyName" required>
+
+                <label for="package">Package:</label>
+                <input type="number" id="package" name="package" required>
+
+                <label for="jobDetails">Job Details:</label>
+                <textarea id="jobDetails" name="jobDetails" rows="4" required></textarea>
+
+                <!-- Add more fields for managing company details -->
+
+                <button type="submit">Add Company</button>
+            </form>
+        </div>
+
+        <!-- Passout batch data management section -->
+        <div class="management-section">
+            <h3>Manage Passout Batches</h3>
+            <form>
+                <label for="passoutYear">Passout Year:</label>
+                <input type="number" id="passoutYear" name="passoutYear" required>
+
+                <label for="batchDetails">Batch Details:</label>
+                <textarea id="batchDetails" name="batchDetails" rows="4" required></textarea>
+
+                <!-- Add more fields for managing passout batches -->
+
+                <button type="submit">Add Batch</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

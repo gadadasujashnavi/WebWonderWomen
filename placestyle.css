@@ -1,0 +1,57 @@
+/* CSS for Student Placement Status Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Style table header text */
+th {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Style table cell text */
+td {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Add some padding to the first column */
+td:first-child {
+    padding-left: 20px;
+}
+
+/* Optional: Add border to the first row to separate headers from data */
+tr:first-child {
+    border-top: 2px solid #333;
+}
+
+/* Optional: Style the table for smaller screens */
+@media (max-width: 600px) {
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}

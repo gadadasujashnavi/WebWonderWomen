@@ -1,0 +1,51 @@
+/* CSS for Placement Result Notifications with Eye-catching Variations */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto; /* Center the container with some margin */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px; /* Rounded container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style for the notifications list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 15px;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 10px; /* Rounded notifications */
+    margin-bottom: 15px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+/* Style for notification text */
+p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Add a hover effect on notifications */
+li:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: #fff; /* White text on hover */
+    border-color: #0056b3; /* Darker blue border on hover */
+}
